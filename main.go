@@ -23,6 +23,10 @@ func main() {
 		}
 	}
 
+	logger.Info().With(log.Fields{
+		"location": log.String(location.String()),
+	}).Logf("starting bankcron %s", Version)
+
 	rr := &runner{
 		logger: logger,
 		now:    base.Now(location),
