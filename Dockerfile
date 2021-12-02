@@ -6,8 +6,10 @@ COPY . .
 RUN make build
 USER moov
 
-FROM scratch
+FROM alpine:3
 LABEL maintainer="Moov <support@moov.io>"
+
+RUN apk add -U curl
 
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /go/src/github.com/moov-io/bankcron/bin/bankcron /bin/bankcron

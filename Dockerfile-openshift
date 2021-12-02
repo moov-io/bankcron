@@ -10,6 +10,8 @@ LABEL maintainer="Moov <support@moov.io>"
 LABEL name="bankcron"
 LABEL version=$VERSION
 
+RUN microdnf update && microdnf install curl
+
 COPY --from=builder /opt/app-root/src/bin/bankcron /bin/bankcron
 
 EXPOSE 8080
