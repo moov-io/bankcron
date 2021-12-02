@@ -21,7 +21,7 @@ else
 	COVER_THRESHOLD=50.0 time ./lint-project.sh
 endif
 
-dist: clean generate build
+dist: clean build
 ifeq ($(OS),Windows_NT)
 	CGO_ENABLED=1 GOOS=windows go build -o bin/bankcron.exe github.com/moov-io/bankcron
 else
@@ -39,11 +39,9 @@ docker-openshift:
 	docker tag quay.io/moov/bankcron:$(VERSION) quay.io/moov/bankcron:latest
 
 release-push:
-	docker push moov/ach:$(VERSION)
-	docker push moov/ach:latest
-	docker push moov/achfuzz:$(VERSION)
-	docker push moov/ach-webui:$(VERSION)
+	docker push moov/bankcron:$(VERSION)
+	docker push moov/bankcron:latest
 
 quay-push:
-	docker push quay.io/moov/ach:$(VERSION)
-	docker push quay.io/moov/ach:latest
+	docker push quay.io/moov/bankcron:$(VERSION)
+	docker push quay.io/moov/bankcron:latest
