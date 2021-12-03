@@ -1,3 +1,9 @@
+## v0.1.4 (Released 2021-12-03)
+
+BUG FIXES
+
+- fix: include timezone database in final container
+
 ## v0.1.3 (Released 2021-12-02)
 
 IMPROVEMENTS
