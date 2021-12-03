@@ -9,10 +9,11 @@ USER moov
 FROM alpine:3
 LABEL maintainer="Moov <support@moov.io>"
 
-RUN apk add -U curl
+RUN apk add -U curl tzdata
 
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /go/src/github.com/moov-io/bankcron/bin/bankcron /bin/bankcron
+COPY --from=builder /usr/local/go/lib/time/zoneinfo.zip /zoneinfo.zip
 COPY --from=builder /etc/passwd /etc/passwd
 
 USER moov
