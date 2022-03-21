@@ -1,6 +1,6 @@
-FROM golang:1.17-alpine as builder
+FROM golang:1.18-alpine as builder
 WORKDIR /go/src/github.com/moov-io/bankcron
-RUN apk add -U make
+RUN apk add -U git make
 RUN adduser -D -g '' --shell /bin/false moov
 COPY . .
 RUN make build
