@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/moov-io/base v0.30.0
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.7.2
 )
 
 require (
@@ -13,5 +13,5 @@ require (
 	github.com/go-logfmt/logfmt v0.5.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rickar/cal/v2 v2.1.4 // indirect
-	gopkg.in/yaml.v3 v3.0.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
