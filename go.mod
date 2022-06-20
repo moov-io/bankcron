@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/moov-io/base v0.30.0
-	github.com/stretchr/testify v1.7.2
+	github.com/stretchr/testify v1.7.4
 )
 
 require (
