@@ -1,3 +1,10 @@
+## v0.1.6 (Released 2022-06-28)
+
+IMPROVEMENTS
+
+- fix(deps): update module github.com/moov-io/base to v0.31.1
+- fix(deps): update module github.com/stretchr/testify to v1.7.5
+
 ## v0.1.5 (Released 2022-03-09)
 
 BUILD
