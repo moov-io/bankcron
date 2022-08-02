@@ -1,6 +1,6 @@
 module github.com/moov-io/bankcron
 
-go 1.18
+go 1.19
 
 require (
 	github.com/moov-io/base v0.33.0
