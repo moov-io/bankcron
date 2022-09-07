@@ -7,7 +7,7 @@ RUN make build
 USER moov
 
 FROM alpine:20220715
-LABEL maintainer="Moov <support@moov.io>"
+LABEL maintainer="Moov <oss@moov.io>"
 
 RUN apk add -U curl tzdata
 
