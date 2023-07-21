@@ -1,3 +1,5 @@
 /bin/
 /coverage.txt
 /lint-project.sh
+/bankcron
+/gitleaks.tar.gz
