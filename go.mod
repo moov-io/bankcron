@@ -1,9 +1,9 @@
 module github.com/moov-io/bankcron
 
-go 1.19
+go 1.20
 
 require (
-	github.com/moov-io/base v0.45.0
+	github.com/moov-io/base v0.45.1
 	github.com/stretchr/testify v1.8.4
 )
 
