@@ -1,3 +1,13 @@
+## v0.3.0 (Released 2023-07-21)
+
+BUILD
+
+- build: fix openshift container, upgrade to ubi9
+- chore(deps): update alpine docker tag to v3.18
+- chore(deps): update golang docker tag to v1.20
+- fix(deps): update module github.com/moov-io/base to v0.45.1
+- fix(deps): update module github.com/stretchr/testify to v1.8.4
+
 ## v0.2.0 (Released 2022-09-20)
 
 BUILD
