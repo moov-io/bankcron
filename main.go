@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 	"time"
@@ -23,9 +22,10 @@ func main() {
 		}
 	}
 
-	logger.Info().With(log.Fields{
+	logger = logger.Info().With(log.Fields{
 		"location": log.String(location.String()),
-	}).Logf("starting bankcron %s", Version)
+	})
+	logger.Logf("starting bankcron %s", Version)
 
 	rr := &runner{
 		logger: logger,
@@ -36,7 +36,7 @@ func main() {
 	if err != nil {
 		os.Exit(1)
 	}
-	fmt.Print(string(output))
+	logger.Log(string(output))
 }
 
 type runner struct {
