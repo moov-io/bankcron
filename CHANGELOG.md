@@ -1,3 +1,14 @@
+## v0.3.1 (Released 2023-10-26)
+
+IMPROVEMENTS
+
+- fix: replace printf with logger
+
+BUILD
+
+- chore(deps): update golang docker tag to v1.21
+- fix(deps): update module github.com/moov-io/base to v0.47.0
+
 ## v0.3.0 (Released 2023-07-21)
 
 BUILD
