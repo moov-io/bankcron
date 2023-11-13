@@ -1,3 +1,9 @@
+## v0.3.2 (Released 2023-11-13)
+
+BUILD
+
+- fix(deps): update module github.com/moov-io/base to v0.48.2
+
 ## v0.3.1 (Released 2023-10-26)
 
 IMPROVEMENTS
