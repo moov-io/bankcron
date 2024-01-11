@@ -3,7 +3,7 @@ module github.com/moov-io/bankcron
 go 1.20
 
 require (
-	github.com/moov-io/base v0.48.4
+	github.com/moov-io/base v0.48.5
 	github.com/stretchr/testify v1.8.4
 )
 
