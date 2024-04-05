@@ -1,3 +1,12 @@
+## v0.3.3 (Released 2024-04-05)
+
+BUILD
+
+- chore(deps): update alpine docker tag to v3.19
+- chore(deps): update golang docker tag to v1.22
+- fix(deps): update module github.com/moov-io/base to v0.48.5
+- fix(deps): update module github.com/stretchr/testify to v1.9.0
+
 ## v0.3.2 (Released 2023-11-13)
 
 BUILD
