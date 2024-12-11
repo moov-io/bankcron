@@ -33,7 +33,7 @@ func TestRunner__Holiday(t *testing.T) {
 	}
 	output, err := rr.run()
 	require.NoError(t, err)
-	require.Len(t, output, 0)
+	require.Empty(t, output)
 }
 
 func TestRunner__Error(t *testing.T) {
@@ -46,5 +46,5 @@ func TestRunner__Error(t *testing.T) {
 	}
 	output, err := rr.run()
 	require.Error(t, err)
-	require.Len(t, output, 0)
+	require.Empty(t, output)
 }
