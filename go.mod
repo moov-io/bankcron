@@ -2,10 +2,10 @@ module github.com/moov-io/bankcron
 
 go 1.23.0
 
-toolchain go1.24.2
+toolchain go1.24.3
 
 require (
-	github.com/moov-io/base v0.54.4
+	github.com/moov-io/base v0.55.0
 	github.com/stretchr/testify v1.10.0
 )
 
