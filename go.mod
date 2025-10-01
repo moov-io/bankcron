@@ -1,11 +1,11 @@
 module github.com/moov-io/bankcron
 
-go 1.23.0
+go 1.24.0
 
 toolchain go1.25.1
 
 require (
-	github.com/moov-io/base v0.57.1
+	github.com/moov-io/base v0.58.0
 	github.com/stretchr/testify v1.11.1
 )
 
@@ -14,6 +14,6 @@ require (
 	github.com/go-kit/log v0.2.1 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
-	github.com/rickar/cal/v2 v2.1.23 // indirect
+	github.com/rickar/cal/v2 v2.1.25 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
