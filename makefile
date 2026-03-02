@@ -21,13 +21,6 @@ else
 	COVER_THRESHOLD=50.0 time ./lint-project.sh
 endif
 
-dist: clean build
-ifeq ($(OS),Windows_NT)
-	CGO_ENABLED=1 GOOS=windows go build -o bin/bankcron.exe github.com/moov-io/bankcron
-else
-	CGO_ENABLED=0 GOOS=$(PLATFORM) go build -o bin/bankcron-$(PLATFORM)-amd64 github.com/moov-io/bankcron
-endif
-
 docker: clean docker-hub docker-openshift
 
 docker-hub:
