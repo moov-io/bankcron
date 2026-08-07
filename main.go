@@ -65,7 +65,7 @@ func (r *runner) run() ([]byte, error) {
 
 	r.logger.Info().Logf("running %s", name)
 
-	cmd := exec.Command(name, args...) //nolint:gosec
+	cmd := exec.Command(name, args...)
 	cmd.Stderr = os.Stdout
 
 	output, err := cmd.Output()
