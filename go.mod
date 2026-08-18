@@ -5,7 +5,7 @@ go 1.25.8
 toolchain go1.26.6
 
 require (
-	github.com/moov-io/base v0.63.2
+	github.com/moov-io/base v0.63.3
 	github.com/stretchr/testify v1.12.0
 )
 
