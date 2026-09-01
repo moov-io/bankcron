@@ -2,7 +2,7 @@ module github.com/moov-io/bankcron
 
 go 1.25.8
 
-toolchain go1.27.0
+toolchain go1.27.1
 
 require (
 	github.com/moov-io/base v0.63.3
