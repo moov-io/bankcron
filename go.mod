@@ -5,7 +5,7 @@ go 1.26.0
 toolchain go1.27.3
 
 require (
-	github.com/moov-io/base v0.64.0
+	github.com/moov-io/base v0.66.0
 	github.com/stretchr/testify v1.12.1
 )
 
